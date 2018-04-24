@@ -67,7 +67,7 @@ contract CSToken is ERC20Interface {
     }
 
     // Funkcja która powoduje, że kontrakt nie przyjmie środków w postaci czystego przelewu ETH.
-    function() public {
+    function() public payable {
         revert();
     }
 }
